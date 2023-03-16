@@ -1,12 +1,10 @@
+"""Задача 12: Петя и Катя – брат и сестра. Петя – студент, а Катя – школьница. Петя помогает Кате по математике.
+Он задумывает два натуральных числа X и Y (X,Y≤1000), а Катя должна их отгадать.
+Для этого Петя делает две подсказки. Он называет сумму этих чисел S и их произведение P.
+Помогите Кате отгадать задуманные Петей числа."""
 
-N = int(input('Pls enter coins qty: '))
-head, tail = 0, 0
-
-for i in range(N):
-        x = int(input('pls use 1 for heads side coins and 2 for tails side: '))
-        if x == 1:
-            head += 1
-        else:
-            tail += 1
-
-print(('Pls change side for: ', head if head < N // 2 else N - head, ('coins')))
+Sum = int(input('Pls enter Sum of numbers: '))
+Mult = int(input('Pls enter multiplication of numbers: '))
+x = (Sum-int((Sum**2-4*Mult)**0.5))//2
+y = (Sum+int((Sum**2-4*Mult)**0.5))//2
+print(x, y)
