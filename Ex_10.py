@@ -14,8 +14,12 @@ for i in range(N):
         x = int(input('pls use 1 for heads side coins and 2 for tails side: '))
         if x == 1:
             head += 1
+        else:
+            tail += 1  
 
-print(('Pls change side for: ', head if head < N // 2 else N - head, ('coins')))
+print(f'Pls change side for: ', head if head < tail else tail, 'coins')
+
+#print(('Pls change side for: ', head if head < N // 2 else N - head, ('coins')))
   
     
 
