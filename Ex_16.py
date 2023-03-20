@@ -1,7 +1,7 @@
-N = int(input("Размер массива: "))
-print("Элементы массива:")
+N = int(input("Pls enter array length: "))
+print("Pls enter arraya's elemnt(s):")
 lst = [int(input()) for i in range(N)] 
-x = int(input("Число x: ")) 
+x = int(input("Pls enter X: ")) 
 
 inc = 0
 for i in lst:
